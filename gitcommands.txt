@@ -1,0 +1,28 @@
+git commands
+git --version
+
+git help
+
+git config : It provides set of configuration variables that control how git looks and operates
+
+git config --global user.email "parag.joshi@hematitecorp.com"
+git config --global user.name "joshipar"
+
+git config -l
+git config --global -l
+
+
+git init - It will initialize an empty git repository and new subfolder .git will be created , It will be used to keep track of changes in the project
+
+git status - it prints out which files are modified, staged or untracked
+
+git add <filename> : specific file to the staging area
+git add . : all untracked and modified files to staging
+git add <foldername> : it will sent folder along with files inside it to staging
+git add -A or git add * : all untracked files to staging
+
+git rm --cached <filename> : file removed from staging to untracked
+
+git commit -m "intital version" : Commits the staged file into commit stage with head pointing to latest commited id
+
+git log : provides the commit log
